@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./nprogress/nprogress.css">
+</head>
+<body>
+  <button>start</button>
+  <button>end</button>
+  
+  <script src="../jquery.js"></script>
+  <script src="./nprogress/nprogress.js"></script>
+  <script>
+    $('button').eq(0).click(function() {
+      NProgress.start();
+    });
+
+    $('button').eq(1).click(function() {
+      NProgress.done();
+    });
+  </script>
+</body>
+</html>
